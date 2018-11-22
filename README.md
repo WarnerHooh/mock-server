@@ -5,6 +5,7 @@
 ### Proxy for different hosts with different prefix
 
 http://localhost:8080/baidu/a  ->  http://www.baidu.com/a
+
 http://localhost:8080/google/a  ->  http://www.google.com/a
 
 ### Penetration
