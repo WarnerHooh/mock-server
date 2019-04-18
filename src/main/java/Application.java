@@ -1,5 +1,6 @@
 import com.github.tomakehurst.wiremock.WireMockServer;
 import config.Service;
+import extensions.EncryptTransformer;
 import extensions.ProxyTransformer;
 
 import java.util.Arrays;
@@ -11,7 +12,9 @@ public class Application {
     public static void main(String[] args) {
 
         WireMockServer wireMockServer = new WireMockServer(
-                wireMockConfig().extensions(ProxyTransformer.class)
+                wireMockConfig()
+                        .extensions(ProxyTransformer.class)
+                        .extensions(EncryptTransformer.class)
                         .port(8080)
                         .usingFilesUnderClasspath("mock")
         );

@@ -11,7 +11,7 @@ import java.lang.reflect.Field;
 import java.util.Objects;
 
 public class ProxyTransformer extends ResponseDefinitionTransformer {
-    public static final String NAME = "devops-proxy";
+    public static final String NAME = "mock-proxy";
     public static final String PREFIX_FIELD_NAME = "urlPrefixToRemove";
 
     @Override

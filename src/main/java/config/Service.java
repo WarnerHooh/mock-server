@@ -1,8 +1,8 @@
 package config;
 
 public enum Service {
-    VP("baidu", "http://www.baidu.com"),
-    UCD("google", "http://www.google.com"),
+    BAIDU("baidu", "http://www.baidu.com"),
+    GOOGLE("google", "http://www.google.com"),
     TEST("test", "https://httpbin.org");
 
     private final String prefix;
